@@ -11247,43 +11247,32 @@ header.masthead .site-heading .h1 {
   }
 }
 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border-top: 1px solid grey;
+    table-layout: fixed;
+    width: 100%;
 }
-
-td,
+td, th {
+    vertical-align: top;
+    border-top: #ccc 1px solid;
+    padding: 10px;
+    width: 100px;
+}
 th {
-  margin: 0;
-  border: 1px solid grey;
-  white-space: nowrap;
-  border-top-width: 0px;
+    position: absolute;
+    left: 0;
+    width: 100px;
 }
-
-div {
-  width: 500px;
-  overflow-x: scroll;
-  margin-left: 5em;
-  overflow-y: visible;
-  padding: 0;
+.outer {
+    position: relative;
 }
-
-.headcol {
-  position: absolute;
-  width: 5em;
-  left: 0;
-  top: auto;
-  border-top-width: 1px;
-  /*only relevant for first row*/
-  margin-top: -1px;
-  /*compensate for top border*/
+.inner {
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: calc(100% - 100px);
+    margin-left: 100px;
 }
-
-.headcol:before {
-  content: 'Row ';
-}
-
-.long {
-  background: yellow;
-  letter-spacing: 1em;
+.fake, td
+{
+    /*margin-left: -100px;    */
+    position:relative;
+    left: -120px;/*includes padding=10px * 2
 }
