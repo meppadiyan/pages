@@ -11259,7 +11259,7 @@ td, th {
 th {
     position: absolute;
     left: 0;
-    width: 100px;
+    /*width: 100px;*/
 }
 .outer {
     position: relative;
