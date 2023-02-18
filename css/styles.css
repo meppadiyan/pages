@@ -11264,3 +11264,16 @@ header.masthead .site-heading .h1 {
 .table td {
   white-space: nowrap;
 }
+tbody tr:nth-child(odd) {
+  background-color: #ECE9E9;
+}
+th { /* header cell */
+  font-weight: 700;
+  text-align: left;
+  color: #272838;
+  border-bottom: 2px solid #EB9486;
+
+  position: sticky;
+  top: 0;
+  background-color: #F9F8F8;
+}
