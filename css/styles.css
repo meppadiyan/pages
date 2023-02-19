@@ -11250,6 +11250,7 @@ header.masthead .site-heading .h1 {
   /*background: #ee99a0;*/
   border-radius: 0.2rem;
   width: 100%;
+  max-width: 960px;
   padding-bottom: 1rem;
   /*color: #212529;*/
   margin-bottom: 0;
